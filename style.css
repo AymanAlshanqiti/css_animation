@@ -1,0 +1,55 @@
+body {
+    background-color: #fff;
+}
+
+#walk {
+    background-image: url("02.png");
+    width: 184px;
+    height: 325px;
+    animation: walk .5s steps(8) infinite,
+    forwards 5s linear infinite;
+}
+
+#str {
+    background-image: url("str.png");
+    width: 1188px;
+    height: 534px;
+    animation: walk 10s steps(20000) infinite,
+    forwards 5s linear infinite;
+}
+
+@keyframes walk{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1472px;
+    }
+}
+
+@keyframes forward{
+    0%{
+        transform: translateX(736px);
+    }
+    100%{
+        transform: translateX(1472px);
+    }
+}
+
+@keyframes streat{
+    100%{
+        background-position: 0px;
+    }
+    0%{
+        background-position: 388px;
+    }
+}
+
+@keyframes forwards{
+    100%{
+        transform: translateX(00px);
+    }
+    0%{
+        transform: translateX(388px);
+    }
+}
